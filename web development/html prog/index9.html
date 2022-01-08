@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery DOM mnipualation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                $("#text").click(function(){
+                    alert("text :"+ $("#test").text());
+                });  
+                $("#HTML").click(function(){
+                    alert("HTML :"+ $("#test").html());    
+                });
+                $("#value").click(function(){
+                    alert("value :"+$("#text1").val());
+                });
+                $("#attr").click(function(){
+                    alert($("#W3s").attr("href"));
+                });
+            });
+
+        </script>
+        <style>
+            #test {color:sienna;font-weight:'100px';}
+            #text{background-color:lightslategray;}
+            #HTML{background-color:grey;}
+        </style>
+    </head>
+    <body>
+        <h1 id="test" style="text-align:center">This is some <b>Bold</b> text in a paragraph.</h1>
+        <button id="text" style="margin:center;margin-left:40%;margin-right:30%;
+        margin-top:auto;margin-bottom:auto">Show text</button>
+        <button id="HTML" style="margin:center;margin-left:40%;margin-right:20%;
+        margin-top:auto;margin-bottom:auto">Show HTML</button>
+        <p style="background-color:beige;color:blue;">Name:<input type="text" id="text1" name="name"></p>
+        <button id="value" style="background-color:plum">Show value</button>
+        <p><a href=".https://www.w3schools.com/sql/default.asp" id="W3s">W3Schools.com</a></p>
+        <button id="attr">Show href value</button>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>callback function</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").hide("slow");
+                    // ,function(){
+                    alert("This paragraph is now hidden");
+                    // });
+                });
+            });
+            </script>
+    </head>
+    <body>
+        <button>Hide</button>
+        <p>This is a practice file</p>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery chaining</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#chain").css({"color":"green"}).slideUp(3000).slideDown(3000);
+                });
+            });
+        </script>
+        <style>
+            button{background-color:seagreen;}
+            #chain {padding:'50px';height:'50px';width:'50px';color:chocolate;font-size:200px;border:medium 2px}
+        </style>
+    </head>
+    <body>
+        <div id="chain">jQuery is fun!!!!!</div>
+        <button >Click me!!</button>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!-- jQuery animate() method concept -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>animated practice</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="pimg.jpg"></script>
+        <script type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    //  $("div").animate({left:'1000px',opacity:'+=0.5',height:'toggle',width:'toggle'});
+                    var div=$("div");
+                    div.animate({height:'300px',opacity:'0.4'},"slow");
+                    div.animate({width:'300px',opacity:'0.8'},"slow");
+                    div.animate({height:'100px',opacity:'0.4'},"slow");
+                    div.animate({widht:'100px',opacity:'0.8'},"slow");
+                    div.animate({left:'1000px',opacity:'0.5'},"slow");
+                    div.animate({fontSize:'4em'},"slow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button>Start Animation</button>
+        <h1>By default,all HTML elements have a static position,and cannot be moved.To manipulate the position,
+            remember to first set the CSS position property of the element to relative,fixed,or absolute.We can use specify 
+            propert's animation value as "slow","hide",or "toggle".
+        </h1>
+        <p>IS IT POSSIBLE TO MANIPULATE ALL CSS PROPERTIES WITH THE animate() METHOD?
+            yes,almost!however,there is one important thing to remember: all property names must be camel-cased when 
+            used with the animate() method: You will need to wright paddingLeft instead od padding-left and so on.
+            Also,color animation is not possible in the core jquery library.If we want animation color,you need to download the "color Animation
+            pluging"from jquery.com</p>
+         <div style="background-color:skyblue;height:50px;padding:50px;width:50px;
+         position:absolute;text-align:center;font-weight:bold;">Nisha</div>
+    </body>
+</html>

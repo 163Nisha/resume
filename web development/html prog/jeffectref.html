@@ -1,0 +1,31 @@
+<!-- jQuery stop animation -->
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>stop animation</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript"></script>
+      <script>
+        //   slideDown(),slideUp() can also use
+          $(document).ready(function(){
+              $("#flip").click(function(){
+                  $("#panel").toggle(4000);                 
+              });
+              $("#stop").click(function(){
+                  $("#panel").stop();
+              });
+          });
+      </script>
+      <style>
+          #stop{background-color: lightsteelblue;}
+          #flip, #panel{padding:5px;height:20px;width:200px;background-color:lightseagreen;color:black;
+        border:solid 2px;border-radius:3px;}
+        #panel{padding:5px;Display:none;text-align:center;font-weight:bold;}
+      </style>
+  </head>
+  <body border="3">
+      <button id="stop">Stop Sliding</button>
+      <div id="flip" align="center">Click to slide down panel</div>
+      <div id="panel" align="center">Hello Everyone!!!!</div>
+  </body>
+</html>

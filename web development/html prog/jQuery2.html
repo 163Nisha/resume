@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New HTML content</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                $("#app1").click(function(){
+                    $("p").prepend("<b>prepended text </b>");
+                });
+                $("#app2").click(function(){
+                    $("ol").prepend("<li>prpended list </li>");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <h1>List:</h1>
+        <ol type="1">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
+        <button id="app1">Append text</button>
+        <button id="app2">Append list items</button>
+    </body>
+</html>

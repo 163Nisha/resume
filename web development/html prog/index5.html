@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeTo("slow",500);
+    $("#div2").fadeTo("slow",3000);
+    $("#div3").fadeTo("fast",3000);
+  });
+});
+</script>
+</head>
+<body>
+<p>Demonstrate fadeOut() with different parameters.</p>
+<button>Click to fade To boxes</button><br><br>
+<div id="div1" style="width:500px;height:80px;display:none;background-color:cadetblue;font-size:50px;
+text-align:center;font-weight:bolder;">I am ready</div><br>
+<div id="div2" style="width:500px;height:80px;display:none;background-color:blanchedalmond;font-weight:bolder;
+text-align:center;font-size:50px">I am dancing</div><br>
+<div id="div3" style="width:500px;height:80px;display:none;background-color:burlywood;
+text-align:center;font-size:50px;font-weight:bolder;">I am greatful</div>
+</body>
+</html>

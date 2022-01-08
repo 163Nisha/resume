@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>set content</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+               $("#btn1").click(function(){
+                   $("#p1").text("Hello Guys!!!");
+               });
+               $("#btn2").click(function(){
+                   $("#p2").html("<b>Good Morning</b>");
+               });
+               $("#btn3").click(function(){
+                   $("#text1").val("Have Good Day!!");
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <p id="p1">This is a my welcome page.</p>
+        <p id="p2">This is another paragraph.</p>
+        <p >input feild:<input type="text" name="ifg" id="text1" value="Nisha Thakur"></p>
+        <button id="btn1">Set Text</button>
+        <button id="btn2">Set HTML</button>
+        <button id="btn3">Set Value</button>
+    </body>
+</html>

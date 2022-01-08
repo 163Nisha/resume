@@ -1,0 +1,5 @@
+f=open("demo.text","r")
+print(f.name)
+print(f.mode)
+print(f.closed)
+

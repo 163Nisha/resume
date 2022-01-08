@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery2.com</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript"></script>
+        <script>
+         $(document).ready(function(){
+             $("#btn1").click(function(){
+                 $("h3").css({"background-color":"orange","color":"red","font-weight":"bold","font-size":"40px"})
+             });
+         });
+         $(document).ready(function(){
+             $("#btn2").click(function(){
+                 $("h3").css({"background-color":"aqua","color":"black","font-size":"60px"})
+             });
+         });
+        </script>
+    </head>
+    <body>
+      <h3>welcom welcom welcome welcom
+        welcom welcom welcome welcom
+        welcom welcom welcome welcom
+        welcom welcom welcome welcom
+      </h3>
+      <button id="btn1">click</button>
+      <button id="btn2">click</button>
+    </body>
+            </html>

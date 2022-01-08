@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is my 6th practice</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    // $("#panel").slideDown(3000);
+                    // $("#panel").slideUp(4000);
+                    $("#panel").slideToggle(3000);
+                });
+            });
+        </script>
+        <style>
+            #panel, #flip {padding:10px;text-align:center;background-color:lightseagreen;border:medium x2px #c3c3c3;}
+            #panel {padding:50px;display:none;}
+            .story {text-align:justify;background-color:lightsteelblue;border-bottom:lightyellow;font-size:50px}
+        </style>     
+    </head>
+    <body>
+       <div id="flip">Click to slide down</div>
+       <div id="panel"> Hello Everyone!!! </div>
+       <div class="story">I am so thankful to you come in my page to read.Hey everyone my name is Nisha Thakur and welcom
+           to my page.so lets talk about something that you to share with me i am greatfull to share and connect with you.
+           So i am telling you a story which is related to my personel life. 
+       </div>
+    </body>
+</html>

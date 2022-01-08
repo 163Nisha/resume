@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head method="post">
+<link rel="stylesheet" href="s1.css">
+<meta charset='utf-8'>
+<title>javascript</title>
+<script type="text/javascript">
+function validate()
+{
+nm=document.getElementById('nm').value;
+pwd=document.getElementById('pwd').value;
+pwd=document.getElementById('cpwd').value;
+mb=document.getElementById('mb').value;
+if(nm.length<1)
+{
+alert("name field is required")
+return false
+}
+if(pwd.length<1)
+{
+alert("password field is required")
+return false
+}
+if(cpwd.length<1)
+{
+alert("cpwd field is required")
+return false
+}
+if(mb.length<1)
+{
+alert("mb field is required")
+return false
+} 
+if(pwd!=cpwd)
+{
+alert("both password are not same")
+return false
+}
+if(mb.length!=10)
+{
+alert("enter 10 digit number only")
+return false
+}
+if(isNaN(mb))
+{
+alert("enter only digit")
+return false
+}
+return true
+}
+</script>
+</head>
+<body>
+<form action="project.html" method="post">
+<table align="center" border="3">
+<tr>
+<td>Enter name</td>
+<td><input type="text" name="nm" id="nm" ></td>
+</tr>
+<tr>
+<td>Enter password</td>
+<td><input type="password" name="pwd" id="pwd"></td>
+</tr>
+<tr>
+<td>Confirm password</td>
+<td><input type="password" name="cpwd" id="cpwd"></td>
+</tr>
+<tr>
+<td>Mobile no.</td>
+<td><input type="text" name="mb" id="mb"></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="submit" name="btn" value="submit" onclick="return validate()"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
